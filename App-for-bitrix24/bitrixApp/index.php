@@ -18,6 +18,7 @@
         <th>Email</th>
         <th>Tuỳ chỉnh</th>
     </tr>
+      
   <?php foreach (contactList()['result'] as $contact)
     if(true) {?>
     <tr>
