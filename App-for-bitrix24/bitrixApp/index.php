@@ -19,8 +19,8 @@
         <th>Tuỳ chỉnh</th>
     </tr>
   <?php foreach (contactList()['result'] as $contact)
-    if($contact['PHONE'] == null || $contact['EMAIL'] == null) {?>
-    <tr> 
+    if(true) {?>
+    <tr>
         <td><?=$contact['ID']?></td>
         <td><?=$contact['LAST_NAME']?> <?=$contact['NAME']?></td>
         <td><?=date("d/m/Y", strtotime($contact['BIRTHDATE']));?></td>
