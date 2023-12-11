@@ -1,8 +1,8 @@
 <?php
 
 function sendData($method, $params) {
-    $_REQUEST['DOMAIN'] = "b24-mwc18s.bitrix24.com";
-    $_REQUEST['AUTH_ID'] = "36a6cd630060bd190060bcc100000001403807cff95b699b2a1ed4f6a1a433edff2e1b";
+    $_REQUEST['DOMAIN'] = "b24-z0cc1x.bitrix24.vn";
+    $_REQUEST['AUTH_ID'] = "375f7665006952570068f6fb00000006403807b58311cf7d2841bđcadedfaef88847";
     $queryUrl = 'http://'.$_REQUEST['DOMAIN'].'/rest/'.$method.'.json';
     $queryData = http_build_query(array_merge($params, array("auth" => $_REQUEST['AUTH_ID'])));
     $curl = curl_init();
